@@ -2,6 +2,7 @@
   "changes": [
     "[ + ] Adicionado botão fechar no topo da interface",
     "[ + ] Adicionado encerramento automático do Axion quando o jogo for fechado",
+    "[ + ] Adicionado detecção visual para auto skill check ao inves de ler o processo (Torna mais seguro)",
     "[ / ] Atualizado para ultima versão do jogo"
   ]
 }
