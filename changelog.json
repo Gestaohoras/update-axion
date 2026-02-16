@@ -2,6 +2,7 @@
   "changes": [
     "[ + ] Adicionado 2 modos de Skill Check: Great e Random",
     "[ * ] Corrigido bug no Auto Wiggle que às vezes não funcionava corretamente",
+    "[ * ] Alguns ajustes na interface do usuário",
     "[ / ] Atualizado para última versão do jogo"
   ]
 }
