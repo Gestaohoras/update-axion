@@ -1,7 +1,6 @@
 {
   "changes": [
     "[ + ] Adicionado 2 modos de Skill Check: Great e Random",
-    "[ + ] Adicionado Mascara nome executavel",
     "[ * ] Corrigido bug no Auto Wiggle que às vezes não funcionava corretamente",
     "[ * ] Alguns ajustes na interface do usuário",
     "[ * ] Melhorado carregamento do arquivo DLL agora não trava mais no Launcher",
