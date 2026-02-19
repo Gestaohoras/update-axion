@@ -2,6 +2,7 @@
   "changes": [
     "[ + ] Adicionado Dois modos de Skillcheck Great e Randon",
     "[ + ] Adicionado Validação de Integridade dos arquivos lado do servidor",
+    "[ + ] Adicionado Aprimoramento do Auto Wiggle",
     "[ - ] Removido Botão de minimizar da interface",
     "[ * ] Corrigido Bug Travamento do launcher no carregamento do arquivo DLL"
   ]
