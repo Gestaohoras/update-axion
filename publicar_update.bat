@@ -1,34 +1,17 @@
 @echo off
-title Publicador de AtualizaÃ§Ãµes - Axion
+setlocal ENABLEDELAYEDEXPANSION
 
 echo ==========================================
 echo     PUBLICADOR DE ATUALIZACAO - AXION
 echo ==========================================
 echo.
 
-:: Confere se esta em um repositorio git
+REM =============================
+REM CONFERE SE ESTA EM UM REPO GIT
+REM =============================
 git rev-parse --is-inside-work-tree >nul 2>&1
-if errorlevel 1 (
+if %ERRORLEVEL% NEQ 0 (
     echo ERRO: Esta pasta nao e um repositorio Git.
-    pause
-    exit /b
-)
-
-:: Confere arquivos obrigatorios
-if not exist Axion.exe (
-    echo ERRO: Axion.exe nao encontrado.
-    pause
-    exit /b
-)
-
-if not exist version.json (
-    echo ERRO: version.json nao encontrado.
-    pause
-    exit /b
-)
-
-if not exist changelog.json (
-    echo ERRO: changelog.json nao encontrado.
     pause
     exit /b
 )
@@ -36,41 +19,68 @@ if not exist changelog.json (
 echo Arquivos encontrados com sucesso.
 echo.
 
-:: Pede a versao
-set /p VERSION=Digite a nova versao do Axion (ex: 1.0.4): 
+REM =============================
+REM PEDIR VERSAO
+REM =============================
+set /p AXION_VERSION=Digite a nova versao do Axion (ex: 1.0.4): 
 
-if "%VERSION%"=="" (
-    echo ERRO: Versao invalida.
+if "%AXION_VERSION%"=="" (
+    echo Versao invalida.
     pause
     exit /b
 )
 
 echo.
-echo Publicando atualizacao da versao %VERSION%...
+echo Publicando atualizacao da versao %AXION_VERSION%...
 echo.
 
-:: Adiciona os arquivos corretos
-git add Axion.exe version.json changelog.json
-
-:: Commit
-git commit -m "Update Axion para versao %VERSION%"
-if errorlevel 1 (
-    echo ERRO ao criar commit.
-    pause
-    exit /b
+REM =============================
+REM ATUALIZAR version.json (SE EXISTIR)
+REM =============================
+if exist version.json (
+    powershell -Command ^
+    "(Get-Content version.json | ConvertFrom-Json | ForEach-Object { $_.axion_release='%AXION_VERSION%'; $_ }) | ConvertTo-Json -Depth 10 | Set-Content version.json"
 )
 
-:: Push
+REM =============================
+REM STATUS GIT
+REM =============================
+git status
+
+REM =============================
+REM ADD
+REM =============================
+git add .
+
+REM =============================
+REM COMMIT (SEM TRATAR COMO ERRO)
+REM =============================
+git diff --cached --quiet
+if %ERRORLEVEL%==0 (
+    echo.
+    echo Nenhuma alteracao detectada. Nada para commitar.
+) else (
+    git commit -m "Update Axion para versao %AXION_VERSION%"
+)
+
+REM =============================
+REM PUSH
+REM =============================
+echo.
+echo Enviando para o GitHub...
 git push
-if errorlevel 1 (
+
+if %ERRORLEVEL% NEQ 0 (
+    echo.
     echo ERRO ao enviar para o GitHub.
+    echo Se aparecer erro de "fetch first", execute:
+    echo   git pull --rebase
+    echo e depois rode este BAT novamente.
     pause
     exit /b
 )
 
 echo.
-echo ==========================================
-echo  ATUALIZACAO PUBLICADA COM SUCESSO!
-echo ==========================================
-echo.
+echo Publicacao concluida com sucesso.
 pause
+endlocal
