@@ -3,7 +3,8 @@
     "[ + ] Adicionado 2 modos de Skill Check: Great e Random",
     "[ * ] Corrigido bug no Auto Wiggle que às vezes não funcionava corretamente",
     "[ * ] Alguns ajustes na interface do usuário",
-    "[ * ] Melhorado carregamento do arquivo DLL agora não trava mais no Launcher",
+    "[ - ] Melhorado carregamento do arquivo DLL agora não trava mais no Launcher",
+    "[ * ] Removido botão minizar",
     "[ / ] Atualizado para última versão do jogo"
   ]
 }
