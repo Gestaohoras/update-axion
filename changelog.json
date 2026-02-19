@@ -1,10 +1,8 @@
 {
   "changes": [
-    "[ + ] Adicionado 2 Modos de Skillcheck Great e Randon",
-    "[ + ] Adicionado Seleção de cor na Mira",
-    "[ - ] teste",
-    "[ * ] Corrigido Bug Auto Wiggle não funcionava como deveria",
-    "[ * ] Corrigido Bug Launcher estava travando com carregamento do arquivo DLL",
-    "[ ! ] Desativado temporariamente ESP"
+    "[ + ] Adicionado Dois modos de Skillcheck Great e Randon",
+    "[ + ] Adicionado Validação de Integridade dos arquivos lado do servidor",
+    "[ - ] Removido Botão de minimizar da interface",
+    "[ * ] Corrigido Bug Travamento do launcher no carregamento do arquivo DLL"
   ]
 }

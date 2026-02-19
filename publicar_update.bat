@@ -35,7 +35,7 @@ echo Publicando atualizacao da versao %AXION_VERSION%...
 echo.
 
 REM =============================
-REM ATUALIZAR version.json (SE EXISTIR)
+REM ATUALIZAR version.json
 REM =============================
 if exist version.json (
     powershell -Command ^
@@ -43,24 +43,19 @@ if exist version.json (
 )
 
 REM =============================
-REM STATUS GIT
+REM ADD (SEM STATUS VERBOSO)
 REM =============================
-git status
+git add . >nul 2>&1
 
 REM =============================
-REM ADD
-REM =============================
-git add .
-
-REM =============================
-REM COMMIT (SEM TRATAR COMO ERRO)
+REM COMMIT (SILENCIOSO QUANDO NAO HA MUDANCA)
 REM =============================
 git diff --cached --quiet
 if %ERRORLEVEL%==0 (
-    echo.
     echo Nenhuma alteracao detectada. Nada para commitar.
 ) else (
-    git commit -m "Update Axion para versao %AXION_VERSION%"
+    git commit -m "Update Axion para versao %AXION_VERSION%" >nul 2>&1
+    echo Commit criado com sucesso.
 )
 
 REM =============================
@@ -73,7 +68,7 @@ git push
 if %ERRORLEVEL% NEQ 0 (
     echo.
     echo ERRO ao enviar para o GitHub.
-    echo Se aparecer erro de "fetch first", execute:
+    echo Execute antes:
     echo   git pull --rebase
     echo e depois rode este BAT novamente.
     pause
