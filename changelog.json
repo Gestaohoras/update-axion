@@ -2,7 +2,7 @@
   "changes": [
     "[ + ] Adicionado 2 Modos de Skillcheck Great e Randon",
     "[ + ] Adicionado Seleção de cor na Mira",
-    "[ - ] Removido Botão minimizar da UI",
+    "[ - ] teste",
     "[ * ] Corrigido Bug Auto Wiggle não funcionava como deveria",
     "[ * ] Corrigido Bug Launcher estava travando com carregamento do arquivo DLL"
   ]
