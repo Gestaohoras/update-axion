@@ -4,6 +4,7 @@
     "[ + ] Adicionado Seleção de cor na Mira",
     "[ - ] teste",
     "[ * ] Corrigido Bug Auto Wiggle não funcionava como deveria",
-    "[ * ] Corrigido Bug Launcher estava travando com carregamento do arquivo DLL"
+    "[ * ] Corrigido Bug Launcher estava travando com carregamento do arquivo DLL",
+    "[ ! ] Desativado temporariamente ESP"
   ]
 }
