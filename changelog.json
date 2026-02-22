@@ -5,6 +5,7 @@
     "[ + ] Adicionado Validação de Integridade dos arquivos lado do servidor",
     "[ + ] Adicionado Aprimoramento do Auto Wiggle",
     "[ - ] Removido Botão de minimizar da interface",
-    "[ * ] Corrigido Bug Travamento do launcher no carregamento do arquivo DLL"
+    "[ * ] Corrigido Bug Travamento do launcher no carregamento do arquivo DLL",
+    "[ * ] Corrigido Bug Auto skillcheck resolução 1366x768 parece funcionar melhor modo Great"
   ]
 }
