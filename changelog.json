@@ -1,11 +1,13 @@
 {
   "changes": [
+    "[ + ] Adicionado Controle deslizante para aumentar ou diminuir o tamanho da mira",
     "[ + ] Adicionado Dois modos de Skillcheck Great e Randon",
     "[ + ] Adicionado Status atual do axion",
     "[ + ] Adicionado Validação de Integridade dos arquivos lado do servidor",
     "[ + ] Adicionado Aprimoramento do Auto Wiggle",
     "[ - ] Removido Botão de minimizar da interface",
     "[ * ] Corrigido Bug Travamento do launcher no carregamento do arquivo DLL",
-    "[ * ] Corrigido Bug Auto skillcheck resolução 1366x768 parece funcionar melhor modo Great"
+    "[ * ] Corrigido Bug Auto skillcheck resolução 1366x768 parece funcionar melhor modo Great",
+    "[ * ] Corrigido Bug Reset HWID agora o reset funciona corretamente na janela de ativação"
   ]
 }
