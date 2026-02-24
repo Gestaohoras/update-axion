@@ -1,6 +1,7 @@
 {
   "changes": [
     "[ + ] Adicionado Controle deslizante para aumentar ou diminuir o tamanho da mira",
+    "[ + ] Adicionado Bypass na memoria do processo o axion agora criará um executavel aleatorio na execução. O mesmo será excluido quando encerrado",
     "[ + ] Adicionado Dois modos de Skillcheck Great e Randon",
     "[ + ] Adicionado Status atual do axion",
     "[ + ] Adicionado Validação de Integridade dos arquivos lado do servidor",
