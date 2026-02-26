@@ -9,6 +9,7 @@
     "[ - ] Removido Botão de minimizar da interface",
     "[ * ] Corrigido Bug Travamento do launcher no carregamento do arquivo DLL",
     "[ * ] Corrigido Bug Auto skillcheck resolução 1366x768 parece funcionar melhor modo Great",
-    "[ * ] Corrigido Bug Reset HWID agora o reset funciona corretamente na janela de ativação"
+    "[ * ] Corrigido Bug Reset HWID agora o reset funciona corretamente na janela de ativação",
+    "[ * ] Corrigido Bug Executavel aletatorio não se auto deletava na tela do launcher"
   ]
 }
