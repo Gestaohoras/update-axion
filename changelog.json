@@ -1,5 +1,6 @@
 {
   "changes": [
+    "[ + ] Adicionado Abas no Inicio agora voce poderá navegar entre a licença e as notas de atualização de forma mais organizada",
     "[ + ] Adicionado Controle deslizante para aumentar ou diminuir o tamanho da mira",
     "[ + ] Adicionado Bypass na memoria do processo o axion agora criará um executavel aleatorio na execução. O mesmo será excluido quando encerrado",
     "[ + ] Adicionado Dois modos de Skillcheck Great e Randon",
@@ -10,6 +11,7 @@
     "[ * ] Corrigido Bug Travamento do launcher no carregamento do arquivo DLL",
     "[ * ] Corrigido Bug Auto skillcheck resolução 1366x768 parece funcionar melhor modo Great",
     "[ * ] Corrigido Bug Reset HWID agora o reset funciona corretamente na janela de ativação",
-    "[ * ] Corrigido Bug Executavel aletatorio não se auto deletava na tela do launcher"
+    "[ * ] Corrigido Bug Executavel aletatorio não se auto deletava na tela do launcher",
+    "[ / ] Ajustado tamanho da interface"
   ]
 }
