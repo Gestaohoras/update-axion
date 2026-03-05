@@ -1,17 +1,8 @@
 {
   "changes": [
-    "[ + ] Adicionado Novo botão Resetar HWID na UI de licença agora o usuario pode resetar diretamente o proprio HWID (Limite reset á cada 7 dias)",
-    "[ + ] Adicionado Abas no Inicio agora voce poderá navegar entre a licença e as notas de atualização de forma mais organizada",
-    "[ + ] Adicionado Controle deslizante para aumentar ou diminuir o tamanho da mira",
-    "[ + ] Adicionado Bypass na memoria do processo o axion agora criará um executavel aleatorio na execução. O mesmo será excluido quando encerrado",
+    "[ + ] Adicionado Modo vantagem \"One-Two-Three-Four\" necessario setar a tecla da interação do jogo para funcionar",
     "[ + ] Adicionado Dois modos de Skillcheck Great e Randon",
-    "[ + ] Adicionado Status atual do axion",
-    "[ + ] Adicionado Validação de Integridade dos arquivos lado do servidor",
-    "[ + ] Adicionado Aprimoramento do Auto Wiggle",
-    "[ - ] Removido Botão de minimizar da interface",
     "[ * ] Corrigido Bug Travamento do launcher no carregamento do arquivo DLL",
-    "[ * ] Corrigido Bug Auto skillcheck resolução 1366x768 parece funcionar melhor modo Great",
-    "[ * ] Corrigido Bug Executavel aletatorio não se auto deletava na tela do launcher",
-    "[ / ] Ajustado tamanho da interface"
+    "[ * ] Corrigido Bug Modo Randon agora deve funcionar melhor"
   ]
 }
