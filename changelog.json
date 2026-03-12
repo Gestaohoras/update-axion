@@ -1,8 +1,8 @@
 {
   "changes": [
+    "[ + ] Adicionado Comandos Console agora voce pode executar comandos diretamente pela aba configurações",
     "[ + ] Adicionado Comando r.color.mid comando da UE para melhorar luminosidade (Comandos já estão com presets definidos não sendo necessario digitar)",
     "[ + ] Adicionado Comando \"show fps\" para mostrar a medição de FPS dentro do jogo",
-    "[ + ] Adicionado Comandos Console agora voce pode executar comandos diretamente pela aba configurações",
     "[ + ] Adicionado Modo vantagem \"One-Two-Three-Four\" necessario setar a tecla da interação do jogo para funcionar",
     "[ + ] Adicionado Dois modos de Skillcheck Great e Randon",
     "[ * ] Corrigido Bug Travamento do launcher no carregamento do arquivo DLL",
