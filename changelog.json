@@ -6,6 +6,7 @@
     "[ + ] Adicionado Modo vantagem \"One-Two-Three-Four\" necessario setar a tecla da interação do jogo para funcionar",
     "[ + ] Adicionado Dois modos de Skillcheck Great e Randon",
     "[ * ] Corrigido Bug Travamento do launcher no carregamento do arquivo DLL",
-    "[ * ] Corrigido Bug Modo Randon agora deve funcionar melhor"
+    "[ * ] Corrigido Bug Modo Randon agora deve funcionar melhor",
+    "[ - ] Removido Botões fechar da interface e botão encerrar foi movido para a aba configurações"
   ]
 }
